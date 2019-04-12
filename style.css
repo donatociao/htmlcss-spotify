@@ -1,0 +1,208 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+.container-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  display: flex;
+}
+
+
+.side-bar {
+  height: 80vh;
+  width: 600px;
+  background-color: #0e0d0c;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 30px;
+}
+
+.logo span {
+  font-size: 30px;
+  font-weight: bolder;
+  padding: 10px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.list .side-item {
+  color: white;
+  padding: 15px;
+  font-size: 18px;
+}
+
+.list a i {
+  padding-right: 20px;
+}
+
+.list .side-item:hover {
+  border-left: 3px solid #1fd760;
+}
+
+.list button {
+  margin: 10px 0;
+  border-radius: 20px;
+}
+
+.main {
+  height: 80vh;
+  flex-grow: 1;
+  background-color: #473e3a;
+  overflow: auto;
+}
+
+.nav {
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav a {
+  margin:20px;
+  padding-top: 30px;
+  color: white;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.player {
+  height: 20vh;
+  background-color: #282828;
+  display: flex;
+  justify-content: center;
+
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10%;
+  width: 90%;
+}
+
+.buttons a {
+  margin: 0 20px;
+}
+
+.volume {
+  display: flex;
+  align-items: center;
+  width: 10%;
+}
+
+.playlist {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.titolo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 30px 60px;
+  color: white;
+  font-weight: bolder;
+}
+
+.playlist {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.item img {
+  width: 150px;
+}
+
+.item {
+  padding-right: 10px;
+  margin-bottom: 20px;
+}
+.item p {
+  color: white;
+  padding: 5px;
+  font-weight: bold;
+
+}
+.policy {
+  display: flex;
+}
+
+/* .policy a:first-child{
+  padding-right: 5px;
+  border-right: 1px solid white;
+}
+
+.policy a:last-child {
+  padding-left: 5px;
+} */
+
+.policy span {
+  height: 20px;
+  width: 1px;
+  background-color: white;
+  margin: 0 auto;
+}
+
+@media all and (max-width: 768px) {
+
+  .main-content {
+    flex-direction: column;
+  }
+
+  .nav a {
+    justify-content: center;
+    margin: auto;
+  }
+
+  .main, .side-bar, .fonter {
+    height: auto;
+  }
+
+  .side-bar {
+    width: 100%;
+  }
+
+  .container-row .playlist .item {
+    justify-content: center;
+    margin: auto;
+  }
+
+  .side-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .player {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+  }
+
+  /* .container-row {
+    postion: relative;
+    position: fixed;
+  } */
+}
